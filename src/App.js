@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Store } from "./Store";
 import { TaskView } from "./components";
 import "./App.css";
 
@@ -24,11 +25,13 @@ const Container = styled.div`
 
 function App() {
 	return (
-		<Wrapper>
-			<Container>
-				<TaskView />
-			</Container>
-		</Wrapper>
+		<Store>
+			<Wrapper>
+				<Container>
+					<TaskView />
+				</Container>
+			</Wrapper>
+		</Store>
 	);
 }
 

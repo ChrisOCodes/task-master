@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "@emotion/styled";
+import { Context } from "../Store";
 
 const Wrapper = styled.div`
 	position: absolute;
@@ -23,6 +24,8 @@ const Container = styled.div`
 `;
 
 export const TaskModal = (props) => {
+	const [state, setState] = useContext(Context);
+
 	const root = document.documentElement;
 	root.style.setProperty("--modalHeight", props.height);
 	root.style.setProperty("--modalWidth", props.width);
