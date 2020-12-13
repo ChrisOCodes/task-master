@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+:root {
+	--modalHeight: 0px;
+	--modalWidth: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.view-header {
+	height: 7%;
+	width: 100%;
+	border-top-right-radius: 14px;
+	border-top-left-radius: 14px;
+	border-bottom: 0.5px solid red;
+	background-color: rgb(255, 252, 74);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.view-nav {
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.view-time-container {
 }
 
-.App-link {
-  color: #61dafb;
+.view-time-display {
+	margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.view-btn-container {
+	margin-left: auto;
+}
+
+.view-create-btn {
+	height: 35px;
+	margin-top: -10px;
+	border-radius: 10px;
+	padding: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.view-body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-bottom-right-radius: 14px;
+	border-bottom-left-radius: 14px;
+	background-color: rgb(255, 252, 74);
+}
+
+.view-body {
+}
+
+.view-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.view-content-left {
+	height: 100%;
+	width: 8%;
+	border-right: 0.5px solid red;
+	border-bottom-left-radius: 14px;
+	background-color: gray;
+}
+
+.view-content-right {
+	height: 100%;
+	width: 100%;
+	border-bottom-right-radius: 14px;
+	background-color: lightgray;
+}
+
+.modal-header {
+}
+
+.modal-textarea-container {
+}
+
+.modal-textarea {
+	resize: none;
+	height: calc(var(--modalHeight) / 3);
+	width: calc(var(--modalWidth) / 3);
+	box-shadow: 0 0 0 0.275px #000000;
+}
+
+.modal-btn-container {
+	margin-top: 10px;
+}
+
+.modal-btn {
+	height: 30px;
+	width: 80px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 0 #000000;
+}
+
+.create-btn {
+	margin-right: 15px;
+}
+
+.cancel-btn {
+	margin-left: 15px;
 }
